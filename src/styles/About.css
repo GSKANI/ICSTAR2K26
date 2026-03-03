@@ -1,0 +1,130 @@
+/* About Section */
+.about {
+  background: white;
+  padding: 6rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1e1b4b;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #d946ef, #ec4899);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1e1b4b;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.feature-text h4 {
+  color: #d946ef;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.feature-text p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.about-visual {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(217, 70, 239, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-visual-text {
+  text-align: center;
+  color: #d946ef;
+  font-size: 4rem;
+  animation: pulse 2s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.about-visual-sub {
+  color: #d946ef;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+}

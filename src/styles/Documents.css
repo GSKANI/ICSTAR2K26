@@ -1,0 +1,115 @@
+/* Document Format Section */
+.documents {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fdf2f8 100%);
+  padding: 6rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.documents .section-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1e1b4b;
+  position: relative;
+}
+
+.documents .section-title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #d946ef, #ec4899);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.doc-grid h3 {
+  color: #1e1b4b;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.doc-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #d946ef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.doc-label {
+  color: #d946ef;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.doc-value {
+  color: #1f2937;
+  font-size: 1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.submission-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px dashed #d946ef;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.submission-box h4 {
+  color: #1e1b4b;
+  margin-bottom: 1rem;
+}
+
+.submission-box p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.email-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #d946ef, #ec4899);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.email-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(217, 70, 239, 0.3);
+}
+
+.submission-note {
+  color: #6b7280;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doc-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

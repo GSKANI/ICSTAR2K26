@@ -1,0 +1,61 @@
+/* Info Cards */
+.info-section {
+  background: linear-gradient(135deg, #f3e8ff 0%, #fdf2f8 100%);
+  padding: 6rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.info-section .section-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #1e1b4b;
+  position: relative;
+}
+
+.info-section .section-title::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #d946ef, #ec4899);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #d946ef;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(217, 70, 239, 0.15);
+}
+
+.info-card h3 {
+  color: #1e1b4b;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.info-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}

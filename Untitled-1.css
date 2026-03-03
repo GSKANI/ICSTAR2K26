@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSTAR 2026 - Women's Day Edition - Smart Technologies & Advanced Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #d946ef;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --dark: #1e1b4b;
+            --light: #faf5ff;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --success: #10b981;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            padding: 1rem 5%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 30px rgba(217, 70, 239, 0.1);
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-subtitle {
+            font-size: 0.65rem;
+            color: var(--text-light);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3a8a 0%, #0c4a6e 50%, #06b6d4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 60px;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+            padding: 0 2rem;
+        }
+
+        .hero .badge {
+            display: inline-block;
+            padding: 0.7rem 1.8rem;
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50px;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .conf-title {
+            font-size: 1.8rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .edition {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-organizers {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-organizers strong {
+            color: #fbbf24;
+            font-weight: 700;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.2rem 2.8rem;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #1e3a8a;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+            background: #f0f9ff;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2.5px solid white;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3a8a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .feature-text h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-text p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .about-visual {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(135deg, #f3e8ff 0%, #fce7f3 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(217, 70, 239, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .about-visual-text {
+            text-align: center;
+            color: var(--primary);
+            font-size: 4rem;
+            animation: pulse 2s ease-in-out infinite;
+            margin-bottom: 1rem;
+        }
+
+        .about-visual-sub {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Info Cards */
+        .info-section {
+            background: linear-gradient(135deg, #f3e8ff 0%, #fdf2f8 100%);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+
+        .info-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(217, 70, 239, 0.15);
+        }
+
+        .info-card h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Registration Section */
+        .registration {
+            background: white;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: rgba(217, 70, 239, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid rgba(217, 70, 239, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            background: linear-gradient(135deg, rgba(217, 70, 239, 0.1) 0%, rgba(236, 72, 153, 0.08) 100%);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            background: rgba(217, 70, 239, 0.12);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-8px);
+        }
+
+        .pricing-card h3 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .price-subtext {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.8rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(217, 70, 239, 0.1);
+        }
+
+        .pricing-features li::before {
+            content: '✓ ';
+            color: var(--success);
+            font-weight: 700;
+            margin-right: 0.7rem;
+        }
+
+        /* Document Format Section */
+        .documents {
+            background: linear-gradient(135deg, #f3e8ff 0%, #fdf2f8 100%);
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .doc-section h3 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .doc-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .doc-label {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-value {
+            color: var(--text);
+            font-size: 1rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        .submission-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px dashed var(--primary);
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .submission-box h4 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .email-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(217, 70, 239, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 5%;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .footer-section p, .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-left {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav ul {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about-grid, .doc-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .pricing-card.featured:hover {
+                transform: translateY(-8px);
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo-section">
+                <div class="logo">ICSTAR 2026</div>
+                <div class="logo-subtitle">Women's Day Edition</div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#documents">Guidelines</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge">🌟 International Conference 2026</div>
+            
+            <h1>ICSTAR 2026</h1>
+            
+            <div class="conf-title">
+                International Conference on Smart Technologies & Advanced Research
+            </div>
+            
+            <div class="edition">
+                Women's Day Special Edition
+            </div>
+
+            <p>
+                A one-day online academic platform for engineering students to present innovative ideas, 
+                research work, and technical solutions. Join us in promoting research culture and encouraging 
+                women participation in smart technologies and advanced research.
+            </p>
+            
+            <div class="hero-organizers">
+                Organized by <strong>Coreberly & SEAD</strong>
+            </div>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary">📝 Register Now</button>
+                <button class="btn btn-secondary">📚 Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">About ICSTAR 2026</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Women's Edition - Smart Technologies & Advanced Research</h2>
+                <p>The ICSTAR 2026 International Conference on Smart Technologies & Advanced Research, organized by Coreberly and SEAD, features a dedicated Women's Day Edition. This premier online academic platform is designed specifically for engineering students to showcase their innovative ideas, groundbreaking research work, and cutting-edge technical solutions.</p>
+                <p>Our conference aims to:</p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎓</div>
+                        <div class="feature-text">
+                            <h4>Promote Research Culture</h4>
+                            <p>Foster a strong research mindset among students</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">👩‍💻</div>
+                        <div class="feature-text">
+                            <h4>Encourage Participation</h4>
+                            <p>Increase women's involvement in tech</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <div class="feature-text">
+                            <h4>Professional Platform</h4>
+                            <p>Knowledge sharing and discussion space</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🌟</div>
+                        <div class="feature-text">
+                            <h4>Networking Opportunities</h4>
+                            <p>Connect with peers and industry experts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="about-visual-text">👩‍🔬</div>
+                <div class="about-visual-sub">Innovation & Excellence</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="section-title">Conference Highlights</div>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📅 One-Day Event</h3>
+                <p>A focused, intensive online conference bringing together the brightest minds in engineering to share innovations and research.</p>
+            </div>
+            <div class="info-card">
+                <h3>💡 Innovation Showcase</h3>
+                <p>Present your research work and technical solutions to a global audience of engineering professionals and students.</p>
+            </div>
+            <div class="info-card">
+                <h3>👥 Team Participation</h3>
+                <p>Submit as a team of 3 members or as an individual researcher, academician, or corporate participant.</p>
+            </div>
+            <div class="info-card">
+                <h3>🎖️ Recognition</h3>
+                <p>Get recognized for your contributions to advancing research and innovation in engineering and technology.</p>
+            </div>
+            <div class="info-card">
+                <h3>🌐 Online Platform</h3>
+                <p>Accessible to participants worldwide with flexible scheduling for maximum participation.</p>
+            </div>
+            <div class="info-card">
+                <h3>📚 Knowledge Exchange</h3>
+                <p>Engage in meaningful discussions and share knowledge with peers from different institutions and backgrounds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+        <div class="section-title">Registration Fees</div>
+        <div style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">
+            <p style="font-size: 1.1rem;">Choose your category and register below</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card featured">
+                <h3>👧 All-Girls Team</h3>
+                <div class="price">₹500</div>
+                <div class="price-subtext">Team of 3 Members</div>
+                <div style="background: linear-gradient(135deg, #fdf2f8, #f3e8ff); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--primary); font-weight: 600;">
+                    ⭐ All 3 members MUST be girls
+                </div>
+                <ul class="pricing-features">
+                    <li>3 female team members</li>
+                    <li>Online presentation access</li>
+                    <li>Certificate of participation</li>
+                    <li>Networking event access</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register Team</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>👥 Other Teams</h3>
+                <div class="price">₹600</div>
+                <div class="price-subtext">Team of 3 Members</div>
+                <div style="background: linear-gradient(135deg, #f0f4ff, #efe6ff); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.9rem; color: #666; font-weight: 600;">
+                    Teams with 1 or more male members
+                </div>
+                <ul class="pricing-features">
+                    <li>3 team members included</li>
+                    <li>Online presentation access</li>
+                    <li>Certificate of participation</li>
+                    <li>Networking event access</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register Team</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>👨‍🏫 Academician</h3>
+                <div class="price">₹1200</div>
+                <div class="price-subtext">Faculty/Professors</div>
+                <ul class="pricing-features">
+                    <li>Full conference access</li>
+                    <li>Speaking opportunities</li>
+                    <li>Networking sessions</li>
+                    <li>Premium certificate</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>🎓 Research Scholar</h3>
+                <div class="price">₹1000</div>
+                <div class="price-subtext">PhD/Postdocs</div>
+                <ul class="pricing-features">
+                    <li>Full conference access</li>
+                    <li>Presentation slot</li>
+                    <li>Networking sessions</li>
+                    <li>Premium certificate</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>💼 Corporate Participant</h3>
+                <div class="price">₹1500</div>
+                <div class="price-subtext">Industry Professional</div>
+                <ul class="pricing-features">
+                    <li>Full conference access</li>
+                    <li>Networking privileges</li>
+                    <li>Speaking slot available</li>
+                    <li>Premium certificate</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>🌍 International Authors</h3>
+                <div class="price">₹2000</div>
+                <div class="price-subtext">International Participants</div>
+                <ul class="pricing-features">
+                    <li>Full conference access</li>
+                    <li>Premium speaking slot</li>
+                    <li>VIP networking</li>
+                    <li>Premium certificate</li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%;">Register</button>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #fdf2f8, #f3e8ff); padding: 3rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
+            <h3 style="color: var(--dark); margin-bottom: 1.5rem; font-size: 1.3rem;">Registration Fee Breakdown</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 700px; margin: 0 auto;">
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <p style="color: var(--primary); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">👧 All-Girls Team</p>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">All 3 members must be girls</p>
+                </div>
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #999;">
+                    <p style="color: var(--text); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">👥 Mixed Teams</p>
+                    <p style="color: var(--text-light); font-size: 0.95rem;">1 or more male members</p>
+                </div>
+            </div>
+            <p style="color: var(--text); font-size: 1.05rem; margin-top: 2rem; margin-bottom: 1rem;">
+                <strong>Additional Team Members:</strong> ₹200 per person
+            </p>
+            <p style="color: var(--text-light);">Add extra members to your team at just ₹200 each</p>
+        </div>
+    </section>
+
+    <!-- Document Format Section -->
+    <section class="documents" id="documents">
+        <div class="section-title">Paper Submission Guidelines</div>
+        <div class="doc-grid">
+            <div>
+                <h3>📝 Document Requirements</h3>
+                
+                <div class="doc-item">
+                    <div class="doc-label">Format</div>
+                    <div class="doc-value">MS Word (.docx)</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Page Size</div>
+                    <div class="doc-value">A4 (210 × 297 mm)</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Maximum Pages</div>
+                    <div class="doc-value">6 pages (not exceeding)</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Font Type</div>
+                    <div class="doc-value">Times New Roman</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Line Spacing</div>
+                    <div class="doc-value">Single spacing</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Columns</div>
+                    <div class="doc-value">Single column</div>
+                </div>
+            </div>
+
+            <div>
+                <h3>🎨 Formatting Details</h3>
+
+                <div class="doc-item">
+                    <div class="doc-label">Paper Title</div>
+                    <div class="doc-value">16 points, Bold</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Section Heading</div>
+                    <div class="doc-value">12 points, Bold</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Sub Headings</div>
+                    <div class="doc-value">12 points, Italic</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Body Text</div>
+                    <div class="doc-value">12 points, Normal</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Abstract</div>
+                    <div class="doc-value">10 points, Italic</div>
+                </div>
+
+                <div class="doc-item">
+                    <div class="doc-label">Team Size</div>
+                    <div class="doc-value">3 members (+ ₹200 each)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submission-box">
+            <h4>📧 Submit Your Paper</h4>
+            <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+                Prepare your manuscript according to the guidelines above and send it to:
+            </p>
+            <a href="/cdn-cgi/l/email-protection#345d574740554606040602745359555d581a575b59" class="email-link">
+                📧 <span class="__cf_email__" data-cfemail="630a00101702115153515523040e020a0f4d000c0e">[email&#160;protected]</span>
+            </a>
+            <p style="color: var(--text-light); margin-top: 1.5rem; font-size: 0.95rem;">
+                Include your team member names and institution in the email subject line
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Conference Details</h3>
+                <p><strong>Event:</strong> ICSTAR 2026</p>
+                <p><strong>Full Name:</strong> International Conference on Smart Technologies & Advanced Research</p>
+                <p><strong>Organized by:</strong> Coreberly & SEAD</p>
+                <p><strong>Track:</strong> Women's Day Edition</p>
+                <p><strong>Format:</strong> Online Academic Platform</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Conference</a></p>
+                <p><a href="#registration">Registration</a></p>
+                <p><a href="#documents">Guidelines</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Organizers</h3>
+                <p><strong>Coreberly</strong></p>
+                <p>Innovation & Research Partners</p>
+                <p style="margin-top: 1rem;"><strong>SEAD</strong></p>
+                <p>Scientific Exchange & Advanced Development</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact & Submissions</h3>
+                <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="432a20303722317173717503242e222a2f6d202c2e">[email&#160;protected]</a></p>
+                <p>Submit all papers in MS Word format to the email above</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Registration Support Available 24/7</p>
+            </div>
+        </div>
