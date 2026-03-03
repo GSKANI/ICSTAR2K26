@@ -50,8 +50,8 @@ function Documents() {
         <p>
           Prepare your manuscript according to the guidelines above and send it to:
         </p>
-        <a href="mailto:icstar2026@example.com" className="email-link">
-          📧 icstar2026@example.com
+        <a href="mailto:icstar2026@gmail.com" className="email-link">
+          📧 icstar2026@gmail.com
         </a>
         <p className="submission-note">
           Include your team member names and institution in the email subject line

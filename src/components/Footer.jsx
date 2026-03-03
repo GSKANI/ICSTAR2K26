@@ -29,8 +29,10 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3>Contact & Submissions</h3>
-          <p>📧 <a href="mailto:icstar2026@example.com">icstar2026@example.com</a></p>
-          <p>Submit all papers in MS Word format to the email above</p>
+          <p>📧 <a href="mailto:icstar2026@gmail.com">icstar2026@gmail.com</a></p>
+          <p style={{ marginTop: '1rem' }}>📱 <strong>Charan K.S</strong> - 9361736413</p>
+          <p>📱 <strong>Taejas</strong> - 6382330559</p>
+          <p style={{ marginTop: '1rem' }}>Submit all papers in MS Word format to the email above</p>
           <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Registration Support Available 24/7</p>
         </div>
       </div>
