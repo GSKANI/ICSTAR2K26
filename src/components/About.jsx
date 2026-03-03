@@ -46,8 +46,7 @@ function About() {
           </div>
         </div>
         <div className="about-visual">
-          <div className="about-visual-text">👩‍🔬</div>
-          <div className="about-visual-sub">Innovation & Excellence</div>
+          <img src="/images/about.jpeg" alt="Innovation & Excellence" className="about-visual-image" />
         </div>
       </div>
     </section>

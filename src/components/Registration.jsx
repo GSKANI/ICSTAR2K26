@@ -128,12 +128,6 @@ function Registration() {
           <strong>Additional Team Members:</strong> ₹200 per person
         </p>
         <p className="additional-subtitle">Add extra members to your team at just ₹200 each</p>
-        
-        <div className="apply-button-container">
-          <a href="https://docs.google.com/forms/d/1bUfIM1AXsAYLF25uHT1kL5IvrqILIGWfdyxp1qI7fEA/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer" className="apply-button">
-            🚀 APPLY NOW
-          </a>
-        </div>
       </div>
     </section>
   );

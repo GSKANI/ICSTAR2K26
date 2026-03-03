@@ -9,6 +9,8 @@ function Footer() {
           <h3>Conference Details</h3>
           <p><strong>Event:</strong> ICSTAR 2026</p>
           <p><strong>Full Name:</strong> International Conference on Smart Technologies & Advanced Research</p>
+          <p><strong>Date:</strong> March 8, 2026</p>
+          <p><strong>Time:</strong> 10:00 AM - 5:00 PM</p>
           <p><strong>Organized by:</strong> Coreberly & SEAD</p>
           <p><strong>Track:</strong> Women's Day Edition</p>
           <p><strong>Format:</strong> Online Academic Platform</p>
@@ -17,9 +19,9 @@ function Footer() {
           <h3>Quick Links</h3>
           <p><a href="#home">Home</a></p>
           <p><a href="#about">About Conference</a></p>
+          <p><a href="#tracks">Tracks</a></p>
           <p><a href="#registration">Registration</a></p>
           <p><a href="#documents">Guidelines</a></p>
-          <p><a href="https://docs.google.com/forms/d/1bUfIM1AXsAYLF25uHT1kL5IvrqILIGWfdyxp1qI7fEA/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer"><strong>🚀 Apply Now</strong></a></p>
         </div>
         <div className="footer-section">
           <h3>Organizers</h3>

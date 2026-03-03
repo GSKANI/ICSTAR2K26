@@ -19,6 +19,7 @@ function Navigation() {
         <ul>
           <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a></li>
           <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
+          <li><a href="#tracks" onClick={(e) => { e.preventDefault(); scrollToSection('tracks'); }}>Tracks</a></li>
           <li><a href="#registration" onClick={(e) => { e.preventDefault(); scrollToSection('registration'); }}>Registration</a></li>
           <li><a href="#documents" onClick={(e) => { e.preventDefault(); scrollToSection('documents'); }}>Guidelines</a></li>
           <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>

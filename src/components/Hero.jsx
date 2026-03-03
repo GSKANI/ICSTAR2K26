@@ -16,6 +16,10 @@ function Hero() {
         <div className="edition">
           Women's Day Special Edition
         </div>
+        
+        <div className="event-datetime">
+          📅 <strong>March 8, 2026</strong> | ⏰ <strong>10:00 AM - 5:00 PM</strong>
+        </div>
 
         <p>
           A one-day online academic platform for engineering students to present innovative ideas, 

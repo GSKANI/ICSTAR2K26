@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import InfoSection from './components/InfoSection';
+import Tracks from './components/Tracks';
 import Registration from './components/Registration';
 import Documents from './components/Documents';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <InfoSection />
+      <Tracks />
       <Registration />
       <Documents />
       <Footer />
