@@ -31,7 +31,7 @@ function Footer() {
             </a>
           </div>
           <p style={{ marginTop: '1.5rem' }}><a href="https://coreberly.in" target="_blank" rel="noopener noreferrer"><strong>COREBERLY</strong></a></p>
-          <p>Innovation & Research Partners</p>
+          <p>Empowering businesses through innovative technology solutions</p>
           <p style={{ marginTop: '1rem' }}><a href="https://thesead.in" target="_blank" rel="noopener noreferrer"><strong>THE SEAD</strong></a></p>
           <p>Scientific Exchange & Advanced Development</p>
         </div>
