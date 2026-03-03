@@ -107,7 +107,7 @@ function Registration() {
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
-            <button className="btn btn-primary" style={{ width: '100%' }}>Register</button>
+            <a href="https://docs.google.com/forms/d/1bUfIM1AXsAYLF25uHT1kL5IvrqILIGWfdyxp1qI7fEA/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', display: 'inline-block', textAlign: 'center', textDecoration: 'none' }}>Register</a>
           </div>
         ))}
       </div>
@@ -130,7 +130,7 @@ function Registration() {
         <p className="additional-subtitle">Add extra members to your team at just ₹200 each</p>
         
         <div className="apply-button-container">
-          <a href="mailto:icstar2026@gmail.com?subject=ICSTAR 2026 Registration" className="apply-button">
+          <a href="https://docs.google.com/forms/d/1bUfIM1AXsAYLF25uHT1kL5IvrqILIGWfdyxp1qI7fEA/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer" className="apply-button">
             🚀 APPLY NOW
           </a>
         </div>
