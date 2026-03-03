@@ -26,11 +26,6 @@ function Hero() {
         <div className="hero-organizers">
           Organized by <strong>Coreberly & SEAD</strong>
         </div>
-        
-        <div className="cta-buttons">
-          <button className="btn btn-primary">📝 Register Now</button>
-          <button className="btn btn-secondary">📚 Learn More</button>
-        </div>
       </div>
     </section>
   );
