@@ -22,7 +22,15 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3>Organizers</h3>
-          <p><a href="https://coreberly.in" target="_blank" rel="noopener noreferrer"><strong>Coreberly</strong></a></p>
+          <div className="organizer-logos">
+            <a href="https://coreberly.in" target="_blank" rel="noopener noreferrer" className="organizer-logo">
+              <img src="/images/coreberly.jpeg" alt="Coreberly" />
+            </a>
+            <a href="https://thesead.in" target="_blank" rel="noopener noreferrer" className="organizer-logo">
+              <img src="/images/sead.png" alt="SEAD" />
+            </a>
+          </div>
+          <p style={{ marginTop: '1.5rem' }}><a href="https://coreberly.in" target="_blank" rel="noopener noreferrer"><strong>Coreberly</strong></a></p>
           <p>Innovation & Research Partners</p>
           <p style={{ marginTop: '1rem' }}><a href="https://thesead.in" target="_blank" rel="noopener noreferrer"><strong>SEAD</strong></a></p>
           <p>Scientific Exchange & Advanced Development</p>
@@ -30,8 +38,12 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact & Submissions</h3>
           <p>📧 <a href="mailto:icstar2026@gmail.com">icstar2026@gmail.com</a></p>
-          <p style={{ marginTop: '1rem' }}>📱 <strong>Charan K.S</strong> - 9361736413</p>
-          <p>📱 <strong>Taejas</strong> - 6382330559</p>
+          <p style={{ marginTop: '1rem' }}>📱 <strong>CHARAN K.S</strong> - 9361736413</p>
+          <p className="contact-title">Founder, Coreberly</p>
+          <p style={{ marginTop: '0.8rem' }}>📱 <strong>TAEJAS</strong> - 6382330559</p>
+          <p className="contact-title">Managing Director, SEAD</p>
+          <p style={{ marginTop: '0.8rem' }}>📱 <strong>KANI G.S</strong> - 6383273657</p>
+          <p className="contact-title">Co-Founder, Coreberly</p>
           <p style={{ marginTop: '1rem' }}>Submit all papers in MS Word format to the email above</p>
           <p style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Registration Support Available 24/7</p>
         </div>

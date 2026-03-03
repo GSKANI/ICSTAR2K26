@@ -170,6 +170,31 @@
   color: #6b7280;
 }
 
+.apply-button-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.apply-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #c2185b, #e91e63);
+  color: white;
+  padding: 1.5rem 3.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(194, 24, 91, 0.3);
+  letter-spacing: 1px;
+}
+
+.apply-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(194, 24, 91, 0.4);
+  background: linear-gradient(135deg, #e91e63, #c2185b);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .pricing-card.featured {
@@ -182,5 +207,12 @@
 
   .breakdown-grid {
     grid-template-columns: 1fr;
+  }
+
+  .apply-button {
+    width: 90%;
+    max-width: 300px;
+    padding: 1.2rem 2rem;
+    font-size: 1rem;
   }
 }

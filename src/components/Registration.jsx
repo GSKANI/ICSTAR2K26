@@ -128,6 +128,12 @@ function Registration() {
           <strong>Additional Team Members:</strong> ₹200 per person
         </p>
         <p className="additional-subtitle">Add extra members to your team at just ₹200 each</p>
+        
+        <div className="apply-button-container">
+          <a href="mailto:icstar2026@gmail.com?subject=ICSTAR 2026 Registration" className="apply-button">
+            🚀 APPLY NOW
+          </a>
+        </div>
       </div>
     </section>
   );
