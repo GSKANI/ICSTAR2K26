@@ -19,7 +19,7 @@
   content: '';
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #d946ef, #ec4899);
+  background: linear-gradient(90deg, #c2185b, #e91e63);
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -67,7 +67,7 @@
 }
 
 .feature-text h4 {
-  color: #d946ef;
+  color: #c2185b;
   margin-bottom: 0.5rem;
   font-size: 1.05rem;
 }
@@ -93,7 +93,7 @@
 
 .about-visual-text {
   text-align: center;
-  color: #d946ef;
+  color: #c2185b;
   font-size: 4rem;
   animation: pulse 2s ease-in-out infinite;
   margin-bottom: 1rem;
@@ -109,7 +109,7 @@
 }
 
 .about-visual-sub {
-  color: #d946ef;
+  color: #c2185b;
   font-weight: 600;
 }
 

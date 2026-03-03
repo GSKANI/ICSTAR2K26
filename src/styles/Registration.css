@@ -19,7 +19,7 @@
   content: '';
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #d946ef, #ec4899);
+  background: linear-gradient(90deg, #c2185b, #e91e63);
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -45,24 +45,24 @@
 }
 
 .pricing-card {
-  background: rgba(217, 70, 239, 0.08);
+  background: rgba(194, 24, 91, 0.08);
   backdrop-filter: blur(10px);
   padding: 2.5rem;
   border-radius: 12px;
-  border: 2px solid rgba(217, 70, 239, 0.2);
+  border: 2px solid rgba(194, 24, 91, 0.2);
   transition: all 0.3s ease;
 }
 
 .pricing-card.featured {
-  border: 2px solid #d946ef;
-  background: linear-gradient(135deg, rgba(217, 70, 239, 0.1) 0%, rgba(236, 72, 153, 0.08) 100%);
+  border: 2px solid #c2185b;
+  background: linear-gradient(135deg, rgba(194, 24, 91, 0.1) 0%, rgba(233, 30, 99, 0.08) 100%);
   transform: scale(1.05);
 }
 
 .pricing-card:hover {
   transform: translateY(-8px);
-  border-color: #d946ef;
-  background: rgba(217, 70, 239, 0.12);
+  border-color: #c2185b;
+  background: rgba(194, 24, 91, 0.12);
 }
 
 .pricing-card.featured:hover {
@@ -79,7 +79,7 @@
 .price {
   font-size: 2.5rem;
   font-weight: 900;
-  color: #d946ef;
+  color: #c2185b;
   margin-bottom: 0.5rem;
 }
 
@@ -95,7 +95,7 @@
   border-radius: 8px;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
-  color: #d946ef;
+  color: #c2185b;
   font-weight: 600;
 }
 
@@ -108,7 +108,7 @@
   padding: 0.8rem 0;
   color: #6b7280;
   font-size: 0.95rem;
-  border-bottom: 1px solid rgba(217, 70, 239, 0.1);
+  border-bottom: 1px solid rgba(194, 24, 91, 0.1);
 }
 
 .pricing-features li::before {
@@ -144,11 +144,11 @@
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 4px solid #d946ef;
+  border-left: 4px solid #c2185b;
 }
 
 .breakdown-title {
-  color: #d946ef;
+  color: #c2185b;
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;

@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 30px rgba(217, 70, 239, 0.1);
+  box-shadow: 0 4px 30px rgba(194, 24, 91, 0.1);
   animation: slideDown 0.6s ease-out;
 }
 
@@ -40,7 +40,7 @@ nav {
 .logo {
   font-size: 1.3rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #d946ef 0%, #ec4899 100%);
+  background: linear-gradient(135deg, #c2185b 0%, #e91e63 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -68,6 +68,14 @@ nav a {
   transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #c2185b;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 nav a::after {
   content: '';
   position: absolute;
@@ -75,16 +83,8 @@ nav a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #d946ef, #ec4899);
+  background: linear-gradient(90deg, #c2185b, #e91e63);
   transition: width 0.3s ease;
-}
-
-nav a:hover {
-  color: #d946ef;
-}
-
-nav a:hover::after {
-  width: 100%;
 }
 
 /* Responsive */
