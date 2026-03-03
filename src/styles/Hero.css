@@ -104,6 +104,17 @@
   font-weight: 700;
 }
 
+.hero-organizers a {
+  color: #fbbf24;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-organizers a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
 .cta-buttons {
   display: flex;
   gap: 1.5rem;

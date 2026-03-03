@@ -22,9 +22,9 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h3>Organizers</h3>
-          <p><strong>Coreberly</strong></p>
+          <p><a href="https://coreberly.in" target="_blank" rel="noopener noreferrer"><strong>Coreberly</strong></a></p>
           <p>Innovation & Research Partners</p>
-          <p style={{ marginTop: '1rem' }}><strong>SEAD</strong></p>
+          <p style={{ marginTop: '1rem' }}><a href="https://thesead.in" target="_blank" rel="noopener noreferrer"><strong>SEAD</strong></a></p>
           <p>Scientific Exchange & Advanced Development</p>
         </div>
         <div className="footer-section">

@@ -24,7 +24,7 @@ function Hero() {
         </p>
         
         <div className="hero-organizers">
-          Organized by <strong>Coreberly & SEAD</strong>
+          Organized by <strong><a href="https://coreberly.in" target="_blank" rel="noopener noreferrer">Coreberly</a> & <a href="https://thesead.in" target="_blank" rel="noopener noreferrer">SEAD</a></strong>
         </div>
       </div>
     </section>
